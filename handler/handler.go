@@ -85,7 +85,7 @@ func sendVerificationEmail(to, token string) error {
 	e.From = config.Cfg.Email
 	e.To = []string{to}
 	e.Subject = "Email Verification"
-	e.Text = []byte(fmt.Sprintf("Click to verify: http://localhost:8080/verify/%s", token))
+	e.Text = []byte(fmt.Sprintf("Clck to verify: http://localhost:8080/verify/%s", token))
 	host, _, err := net.SplitHostPort(config.Cfg.Address)
 	if err != nil {
 		return err

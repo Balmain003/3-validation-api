@@ -3,7 +3,7 @@ package main
 import (
 	"log"
 	"net/http"
-	handler "study/handler" // Исправлен импорт
+	handler "study/handler"
 )
 
 func main() {
