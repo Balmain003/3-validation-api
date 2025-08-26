@@ -1,4 +1,4 @@
-module study
+module email-verify
 
 go 1.24.4
 
