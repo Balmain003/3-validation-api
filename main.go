@@ -73,7 +73,7 @@ func SendEmail(Email, Password, Address, Reciver, MsgWithHash string) bool {
 	e := email.NewEmail()
 	e.From = Email
 	e.To = []string{Reciver}
-	e.Subject = "Подтверждение"
+	e.Subject = "Подтвержение"
 	e.Text = []byte(MsgWithHash)
 	err := e.Send(Address, smtp.PlainAuth("", Email, Password, "smtp.mail.ru"))
 	return err == nil
